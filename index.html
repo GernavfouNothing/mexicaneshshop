@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Виртуальные номера и Telegram-аккаунты разных стран. Мексика, США, Германия и другие страны. Актуальный прайс и контакты Mexicanesh.">
+    <meta name="keywords" content="виртуальные номера, виртуальный номер, виртуальный номер Telegram, номера Telegram, Мексика, мексиканец, Mexicanesh, Telegram аккаунты">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>Mexicanesh — виртуальные номера Telegram и аккаунты</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0e14;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1.5rem 1rem;
+            line-height: 1.35;
+            color: #b8c4d4;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .card {
+            max-width: 680px;
+            width: 100%;
+            background: #0e131c;
+            border-radius: 20px;
+            padding: 2rem 2rem 1.8rem;
+            border: 1px solid #1c2534;
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 550px) {
+            body {
+                padding: 0.6rem 0.4rem;
+            }
+            .card {
+                padding: 1.4rem 1rem 1.2rem;
+                border-radius: 16px;
+            }
+        }
+
+        .header-flower {
+            text-align: center;
+            font-size: 1.2rem;
+            letter-spacing: 4px;
+            color: #6b7f99;
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: center;
+            color: #edf2f9;
+            margin-bottom: 0.4rem;
+            letter-spacing: -0.3px;
+        }
+
+        .subhead {
+            text-align: center;
+            font-size: 0.7rem;
+            color: #64748b;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #161f2c;
+            padding-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            font-weight: 400;
+        }
+
+        .greeting {
+            font-size: 0.8rem;
+            background: #0d1420;
+            padding: 1rem 1.2rem;
+            border-radius: 14px;
+            color: #b2c0d1;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid #5b7c9e;
+            line-height: 1.55;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+        }
+
+        .greeting strong {
+            color: #e2eaf3;
+            font-weight: 500;
+        }
+
+        .price-title {
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin: 1rem 0 0.75rem 0;
+            color: #e2e9f2;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .price-title span {
+            background: #17202e;
+            color: #9aacbf;
+            padding: 0.15rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            border: 1px solid #232e40;
+        }
+
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #0c111a;
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            border: 1px solid #182232;
+            font-size: 0.8rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-table th {
+            background: #111a27;
+            font-weight: 500;
+            font-size: 0.65rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #7c8fa8;
+            padding: 0.6rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #1d2a3a;
+        }
+
+        .price-table td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid #151f2d;
+            color: #d3dce6;
+            vertical-align: middle;
+            font-size: 0.78rem;
+            font-weight: 400;
+            transition: background 0.15s;
+        }
+
+        .price-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .price-table tr:hover td {
+            background: #101722;
+        }
+
+        .country-code {
+            font-weight: 400;
+            color: #8fa3bd;
+            background: #151f2d;
+            border-radius: 6px;
+            padding: 0.1rem 0.4rem;
+            font-size: 0.68rem;
+            margin-left: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            letter-spacing: 0.2px;
+        }
+
+        .flag {
+            font-size: 1rem;
+            margin-right: 0.35rem;
+            vertical-align: middle;
+        }
+
+        .rub {
+            font-weight: 600;
+            color: #eef3f9;
+            letter-spacing: 0.2px;
+        }
+
+        .stars {
+            background: #1e1b10;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            font-weight: 500;
+            color: #d4b35c;
+            font-size: 0.7rem;
+            white-space: nowrap;
+            border: 1px solid #3a3320;
+            margin-left: 0.5rem;
+            display: inline-block;
+        }
+
+        .notes {
+            background: #0c131e;
+            padding: 0.9rem 1.2rem;
+            border-radius: 14px;
+            margin: 1rem 0 1.5rem 0;
+            font-size: 0.72rem;
+            color: #8fa0b5;
+            border: 1px solid #161f2c;
+            line-height: 1.55;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+        }
+
+        .payment-box {
+            background: #0d1420;
+            border: 1px solid #182232;
+            border-radius: 16px;
+            padding: 1.2rem 1.2rem;
+            margin: 1.5rem 0 1.2rem;
+            font-size: 0.75rem;
+            color: #bcc9d8;
+        }
+
+        .payment-box p {
+            margin-bottom: 0.6rem;
+            color: #b8c5d5;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+
+        /* Единый стиль для всех кнопок и блока партнёра */
+        .btn, .partner-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #151e2c;
+            color: #e0e7f0;
+            padding: 0.65rem 1.5rem;
+            border-radius: 32px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.8rem;
+            letter-spacing: 0.3px;
+            transition: all 0.2s ease;
+            border: 1px solid #232e40;
+            font-family: 'Inter', sans-serif;
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            line-height: 1.2;
+        }
+
+        .btn-outline, .partner-btn.outline {
+            background: transparent;
+            color: #b6c4d6;
+            border: 1px solid #2a3a50;
+            box-shadow: none;
+        }
+
+        .btn:hover, .partner-btn:hover {
+            background: #1c283a;
+            border-color: #3a4e6b;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-outline:hover, .partner-btn.outline:hover {
+            background: #121a27;
+            border-color: #425673;
+            color: #dce5ef;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-column {
+            display: flex;
+            flex-direction: column;
+            gap: 0.7rem;
+            margin: 0.8rem 0 1.2rem;
+            align-items: center;
+            width: 100%;
+        }
+
+        .partner-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #101823;
+            padding: 0.65rem 1.5rem;
+            border-radius: 32px;
+            width: 100%;
+            max-width: 340px;
+            margin: 0 auto;
+            font-weight: 500;
+            color: #a7b7ca;
+            border: 1px solid #253247;
+            font-size: 0.8rem;
+            letter-spacing: 0.3px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+            transition: all 0.2s ease;
+        }
+
+        .partner-block:hover {
+            background: #161f2e;
+            border-color: #354a66;
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .partner-highlight {
+            font-weight: 600;
+            color: #d4dfeb;
+            background: #1c2839;
+            padding: 0.15rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid #1b2636;
+            margin: 1.4rem 0 1rem 0;
+        }
+
+        .small-note {
+            font-size: 0.7rem;
+            color: #7186a0;
+            margin-top: 0.5rem;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+            background: #121e2d;
+            padding: 0.15rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.75em;
+            color: #d3deeb;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.65rem;
+            color: #566b83;
+            border-top: 1px solid #1a2433;
+            padding-top: 1rem;
+            letter-spacing: 0.6px;
+            font-weight: 300;
+        }
+
+        @media (max-width: 480px) {
+            .btn, .partner-btn, .partner-block {
+                max-width: 100%;
+                padding: 0.6rem 1rem;
+                font-size: 0.75rem;
+            }
+            .price-table td {
+                padding: 0.55rem 0.7rem;
+            }
+            .price-table th {
+                padding: 0.5rem 0.7rem;
+            }
+            .greeting {
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Mexicanesh",
+  "description":"Виртуальные номера и Telegram-аккаунты разных стран.",
+  "inLanguage":"ru"
+}
+</script>
+
+</head>
+<body><a href="https://t.me/rep_mexicanesh_virtualnumbers" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:9px;background:#ff6b00;color:#fff;text-decoration:none;border-radius:13px;padding:12px 16px;font-weight:850;margin-top:12px">📢 Актуальные цены</a>
+    <div class="card">
+        <div class="header-flower">🌸🌸🌸</div>
+        <h1>Mexicanesh — виртуальные номера и Telegram-аккаунты</h1>
+        <div class="subhead">Полный доступ · Без блокировок · Подтверждены по SMS</div>
+
+        <div class="greeting">
+            Виртуальные номера и готовые Telegram-аккаунты на номерах разных стран. Чистые, без блокировок, с полным доступом и подтверждением по SMS. Подходят для личного использования, работы с клиентами, каналов, чатов, SMM и обхода ограничений. Без сессий, ботов и теневых функций — только полноценные аккаунты сразу после оплаты. Нужна физическая сим-карта под ваш номер — обсуждаемо, пишите в личные сообщения.
+        </div>
+
+        <div class="price-title">
+            🌟 PRICE <span>руб / Telegram Stars</span>
+        </div>
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Страна</th>
+                    <th>Стоимость</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><span class="flag">🇲🇲</span> Мьянма <span class="country-code">+95</span></td><td><span class="rub">145 руб</span> <span class="stars">130 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇺🇸</span> США <span class="country-code">+1</span></td><td><span class="rub">155 руб</span> <span class="stars">135 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇨🇴</span> Колумбия <span class="country-code">+57</span></td><td><span class="rub">165 руб</span> <span class="stars">145 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇲🇽</span> Мексика <span class="country-code">+52</span></td><td><span class="rub">215 руб</span> <span class="stars">190 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇧🇷</span> Бразилия <span class="country-code">+55</span></td><td><span class="rub">225 руб</span> <span class="stars">200 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇩🇪</span> Германия <span class="country-code">+49</span></td><td><span class="rub">300 руб</span> <span class="stars">270 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇵🇱</span> Польша <span class="country-code">+48</span></td><td><span class="rub">310 руб</span> <span class="stars">280 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇫🇮</span> Финляндия <span class="country-code">+358</span></td><td><span class="rub">310 руб</span> <span class="stars">280 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇫🇷</span> Франция <span class="country-code">+33</span></td><td><span class="rub">310 руб</span> <span class="stars">280 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇯🇵</span> Япония <span class="country-code">+81</span></td><td><span class="rub">300 руб</span> <span class="stars">270 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇰🇿</span> Казахстан <span class="country-code">+7</span></td><td><span class="rub">280 руб</span> <span class="stars">250 ⭐</span></td></tr>
+                <tr><td><span class="flag">🇷🇺</span> Россия <span class="country-code">+7</span></td><td><span class="rub">420 руб</span> <span class="stars">380 ⭐</span></td></tr>
+            </tbody>
+        </table>
+
+        <div class="notes">
+            В прайсе указана стоимость одного готового Telegram-аккаунта с номером выбранной страны. Все аккаунты выдаются один раз, с паролем и инструкцией по входу. Вы получаете номер, код подтверждения и полный доступ к аккаунту — ничего не нужно доделывать.
+        </div>
+
+        <div class="payment-box">
+            <p><strong>🎁 Оплата принимается в рублях или Telegram Stars.</strong> Я принимаю звёзды как переводом, так и подарком прямо в чате. Если у вас нет звёзд — заходите в официального бота:</p>
+            <p><a class="btn btn-outline" href="http://t.me/lsstarzbot?start=user-8980087332" target="_blank" rel="noopener noreferrer">⭐ Купить звёзды</a></p>
+            <p style="margin-top: 0.5rem;">Нажмите <span class="mono">/start</span>, выберите «купить звёзды», введите мой юзернейм <strong>@mexicanesh</strong>, укажите сумму, оплатите, и после получения я отправлю вам номер, пароль и пошаговую инструкцию по входу и настройке.</p>
+        </div>
+
+        <!-- Единый столбик кнопок и партнёрского блока -->
+        <div class="contact-column">
+            <a class="btn" href="https://t.me/mexicanesh" target="_blank" rel="noopener noreferrer">📩 Написать @mexicanesh</a>
+            <a class="btn btn-outline" href="https://t.me/Kwadrow" target="_blank" rel="noopener noreferrer">📢 Канал с ценами</a>
+            <a class="partner-btn outline" href="https://t.me/mexicanesh" target="_blank" rel="noopener noreferrer">🤝 PARTNER: <span class="partner-highlight">@Kwadrov</span></a>
+        </div>
+        <p class="small-note">
+            Подписывайтесь, чтобы первыми узнавать о новых странах и специальных предложениях!
+        </p>
+
+        <hr class="divider">
+
+        <div class="footer-note">
+            Kwadrov · Telegram-аккаунты с реальными номерами · Все аккаунты чистые и передаются с полным доступом
+        </div>
+    </div>
+</body>
+</html>
